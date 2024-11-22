@@ -2,20 +2,254 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 }
+.image{
+    border-radius: 50%;
+    height:18rem ;
+    width: 18rem;
+    margin-left: 3.125rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.125rem; 
+}
+.Bcircles{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: -1.875rem;
+}
+.circle{
+position: absolute;
+border-radius: 50%;
+}
+ .c-one{
+    width: 18.75rem;
+    height: 18.75rem;
+    border-top: 0.25rem solid rgb(209, 7, 7);
+    animation: rightrotate 1s linear infinite;
+} 
+.c-two{
+    width: 18.75rem;
+    height: 18.75rem;
+    border-right: 0.25rem solid rgb(77, 9, 202);
+    animation: leftrotate 1s linear infinite;
+}
+.c-three{
+    width: 18.75rem;
+    height: 18.75rem;
+    border-left: 0.25rem solid rgb(221, 17, 153);
+    animation: rightrotate 1s linear infinite;
+}
+@keyframes rightrotate
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes leftrotate
+{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@media (min-width:320px) and (max-width:640px){
+   .image{
+    height: 12rem;
+    width: 12rem;
+    margin-top: -0rem;
+   } 
+   .Bcircles{
+    margin-top: 2rem;
+   }
+   .c-one{
+width:12.9rem ;
+height: 12.9rem;
+   }
+   .c-two{
+    width:12.9rem ;
+    height: 12.9rem;
+   }
+   .c-three{
+    width:12.9rem ;
+    height:12.9rem ;
+   }
+}
+@media (min-width:640px) and  (max-width:768px){
+    .image{
+     height: 15rem;
+     width: 15rem;
+     margin-top: -0.2rem;
+    } 
+    .Bcircles{
+     margin-top: 3rem;
+    }
+    .c-one{
+ width:15.9rem ;
+ height: 15.9rem;
+    }
+    .c-two{
+     width:15.9rem ;
+     height: 15.9rem;
+    }
+    .c-three{
+     width:15.9rem ;
+     height:15.9rem ;
+    }
+ }
+ @media (min-width:1024px) and (max-width:1440px){
+    .image{
+     height: 17rem;
+     width: 45rem;
+     
+    
+    } 
+    .Bcircles{
+     margin-top: -3rem;
+     margin-left: 1rem;
+    
+    }
+    .c-one{
+ width:17.9rem ;
+ height: 17.9rem;
+    }
+    .c-two{
+     width:17.9rem ;
+     height: 17.9rem;
+    }
+    .c-three{
+     width:17.9rem ;
+     height:17.9rem ;
+    }
+    
+ }
+
+/* @media (max-width:375px){
+    .image{
+     height: 12.1rem;
+     width: 12.1rem;
+     margin-top: -0rem;
+    } 
+    .Bcircles{
+     margin-top: 2rem;
+    }
+    .c-one{
+ width:12.9rem ;
+ height: 12.9rem;
+    }
+    .c-two{
+     width:12.9rem ;
+     height: 12.9rem;
+    }
+    .c-three{
+     width:12.9rem ;
+     height:12.9rem ;
+    }
+ }
+ 
+ @media (max-width:425px){
+    .image{
+     height: 12rem;
+     width: 9rem;
+     margin-top: 0rem;
+    } 
+    .Bcircles{
+     margin-top: 2rem;
+    }
+    .c-one{
+ width:12.9rem ;
+ height: 12.9rem;
+    }
+    .c-two{
+     width:12.9rem ;
+     height: 12.9rem;
+    }
+    .c-three{
+     width:12.9rem ;
+     height:12.9rem ;
+    }
+ }
+ 
+
+@media (min-width:640px) and  (max-width:768px){
+    .image{
+     height: 17rem;
+     width: 17rem;
+     margin-top: -0.2rem;
+    } 
+    .Bcircles{
+     margin-top: 5rem;
+    }
+    .c-one{
+ width:17.9rem ;
+ height: 17.9rem;
+    }
+    .c-two{
+     width:17.9rem ;
+     height: 17.9rem;
+    }
+    .c-three{
+     width:17.9rem ;
+     height:17.9rem ;
+    }
+ }
+ @media (max-width:1024px){
+    .image{
+     height: 17rem;
+     width: 17rem;
+     
+    
+    } 
+    .Bcircles{
+     margin-top: -3rem;
+    
+    }
+    .c-one{
+ width:17.9rem ;
+ height: 17.9rem;
+    }
+    .c-two{
+     width:17.9rem ;
+     height: 17.9rem;
+    }
+    .c-three{
+     width:17.9rem ;
+     height:17.9rem ;
+    }
+    
+ }
+
+ @media (max-width:1440px){
+    .image{
+     height: 12rem;
+     width: 20rem;
+     
+    
+    } 
+    .Bcircles{
+     margin-top: 0rem;
+    
+    }
+    .c-one{
+ width:12.9rem ;
+ height: 12.9rem;
+    }
+    .c-two{
+     width:12.9rem ;
+     height: 12.9rem;
+    }
+    .c-three{
+     width:12.9rem ;
+     height:12.9rem ;
+    }
+    
+ } */
