@@ -28,7 +28,7 @@ export default function Sidenavbar() {
           <div className="w-8 h-1 bg-red-700"></div>
         </button>
 
-        {/* Navbar Links - visible on large screens or when open on small screens */}
+        
         <nav
           className={`absolute top-16 right-4  rounded-md p-4 ${
             isOpen ? "block" : "hidden"

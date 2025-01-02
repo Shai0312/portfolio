@@ -1,5 +1,4 @@
 'use client'
-import Typewriter from 'typewriter-effect';
 import { IoLogoHtml5 } from "react-icons/io5";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
